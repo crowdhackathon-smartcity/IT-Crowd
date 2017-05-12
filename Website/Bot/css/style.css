@@ -606,7 +606,7 @@ a:hover{
     margin-bottom: 0;
     background: transparent;
     border: 0;
-    color: #fff !important;
+    color: #222222 !important;
     padding: 2% 0;
     transition: all 0.5s;
     max-height:140px;
@@ -614,7 +614,7 @@ a:hover{
 #sticky {
     padding: 0.5ex;
     background-color: #333;
-    color: #fff;
+    color: #222222;
     font-size: 2em;
     border-radius: 0.5ex;
 }

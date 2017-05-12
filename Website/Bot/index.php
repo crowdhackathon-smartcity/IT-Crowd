@@ -205,28 +205,27 @@
 
 
         <div id="bot-mobile" style=" padding:1%; background-color: black;" >
-
-
+            <br></br>
             <div class="container">
                 <div class="col-md-2" style="">
                     <h4 class="media-heading" style="color:white; font-size:30px; text-align: center;">Δυνατότητες</h4>
                     <ul style=" color:black; color:white; font-size: 18px;" >
                         <br>
-                        <li>Αυτοματοποιημένη υποβολή αναφορών.</li>
+                        <li>Υποβολή θεμάτων που αφορούν την κοινωνία.</li>
                         <br>
                         <li>Ενημέρωση της Τοπικής Αυτοδ. σε πραγματικό χρόνο.</li>
                         <br>
-                        <li>Ενημέρωση πολιτών.</li>
+                        <li>Ενημέρωση πολιτών για διάφορα γεγονότα.</li>
                     </ul>
                 </div>
                 <div class="col-md-3" style="">
                     <ul style="list-style-type:none;" >
-                        <img style="width:300px; height:646px;" src="img/mockup.gif" alt=""/>
+                        <img style="width:300px; height:600px;" src="img/mockup.gif" alt=""/>
                     </ul>
                 </div>
                 <div class="col-md-3" style="">  
                     <ul style="list-style-type:none;" >
-                        <img style="width:300px; height:646px;" src="img/mockup.gif" alt=""/>
+                        <img style="width:300px; height:600px;" src="img/mockup1.gif" alt=""/>
                     </ul>
                 </div>
 
@@ -234,11 +233,9 @@
                     <h4 class="media-heading" style="color:white; font-size:30px; text-align: center;">Δυνατότητες</h4>
                     <ul style=" color:black; color:white; font-size: 18px;" >
                         <br>
-                        <li>Αυτοματοποιημένη υποβολή αναφορών.</li>
+                        <li>Υποβολή ελέγχων από πολίτες προς το κράτος.</li>
                         <br>
-                        <li>Ενημέρωση της Τοπικής Αυτοδ. σε πραγματικό χρόνο.</li>
-                        <br>
-                        <li>Ενημέρωση πολιτών.</li>
+                        <li>Επιβράβευση με πόντους εξαργύρωσης.</li>
                     </ul>
                     <p></p> 
 
@@ -252,6 +249,25 @@
                 </div>
 
             </div>
+            <br></br>
+        </div>
+
+        <div id="bot-mobile1" style=" background-color: white; align-content: center;" >
+            <br></br>
+            <br></br>
+            <div class="container"style="zoom:80%;">
+
+                <div class="col-md-1" style="text-align: left;">
+                </div>
+                <div class="col-md-10" style="">
+
+                    <img style="width:950px; height:300px;" src="img/back_logo2.png" alt=""/>
+                </div>
+                <div class="col-md-1" style="text-align: left;">
+                </div>
+            </div>
+            <br></br>
+            <br></br>
         </div>
 
 
