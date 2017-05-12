@@ -204,13 +204,10 @@
 
 
 
-        <div id="bot-mobile" style="background-color:black; padding:3%; background-color: black;" >
+        <div id="bot-mobile" style=" padding:1%; background-color: black;" >
 
 
             <div class="container">
-
-
-
                 <div class="col-md-2" style="">
                     <h4 class="media-heading" style="color:white; font-size:30px; text-align: center;">Δυνατότητες</h4>
                     <ul style=" color:black; color:white; font-size: 18px;" >
@@ -465,7 +462,7 @@
         <nav id="tf-footer">
             <div class="container">
                 <div align="center" >
-                    <p style=" font-size: 15px;">2017 © . All Rights Reserved. Designed and Coded with <img style="width: 15px; height: 15px; " src="img/h.png" alt="" /> by <a href="https://tableon.gr/" style=" text-decoration:none; color:red; font-size: 18px;"> Crowd Report Developement Team </a> </p>
+                    <p style=" font-size: 15px;">2017 © . All Rights Reserved. Designed and Coded with <img style="width: 15px; height: 15px; " src="img/h.png" alt="" /> by <a href="https://tableon.gr/" style=" text-decoration:none; color:red; font-size: 18px;"> ΙΤ Crowd Developement Team </a> </p>
                 </div>
 
                 <div align="center"> 
