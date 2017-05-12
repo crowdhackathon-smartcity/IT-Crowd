@@ -192,7 +192,7 @@
                 <div class="container" style="" >
                     <div class="content" style="" >
                         <ul style="list-style-type:none; align-content:center;  " >
-                            <li><img style="" src="img/mini_logo.png" alt="" /></li>
+                            <li><img style="" src="img/mini_logo_best.png" alt="" /></li>
                             <li> <button class="button button4" style="background-color:#3C96A7;"onclick="">Μίλησε στο bot! </button>    </li>
                         </ul>
                     </div>
@@ -204,23 +204,38 @@
 
 
 
-        <div id="bot-mobile" style="background-color:white; padding:3%; background-color: black;" >
+        <div id="bot-mobile" style="background-color:black; padding:3%; background-color: black;" >
+
+
             <div class="container">
-                <div class="col-md-6" style="">
+
+
+
+                <div class="col-md-2" style="">
+                    <h4 class="media-heading" style="color:white; font-size:30px; text-align: center;">Δυνατότητες</h4>
+                    <ul style=" color:black; color:white; font-size: 18px;" >
+                        <br>
+                        <li>Αυτοματοποιημένη υποβολή αναφορών.</li>
+                        <br>
+                        <li>Ενημέρωση της Τοπικής Αυτοδ. σε πραγματικό χρόνο.</li>
+                        <br>
+                        <li>Ενημέρωση πολιτών.</li>
+                    </ul>
+                </div>
+                <div class="col-md-3" style="">
                     <ul style="list-style-type:none;" >
-                        <img style="width:320px; height:646px;" src="img/mockup.gif" alt="" />
+                        <img style="width:300px; height:646px;" src="img/mockup.gif" alt=""/>
+                    </ul>
+                </div>
+                <div class="col-md-3" style="">  
+                    <ul style="list-style-type:none;" >
+                        <img style="width:300px; height:646px;" src="img/mockup.gif" alt=""/>
                     </ul>
                 </div>
 
-                <div class="col-md-2" style="zoom:70%;">
-                    <ul style="list-style-type:none;" >
-
-                    </ul>
-                </div>
-
-                <div class="col-md-3" style="padding-left:50px; padding:1%; ">  
-                    <h4 class="media-heading" style="color:white; font-size:30px; text-align: left; padding-top:50px; ">Δυνατότητες</h4>
-                    <ul style=" color:black; color:white; text-align:left; font-size: 18px;" >
+                <div class="col-md-2" style="zoom:100%; text-align: left;">
+                    <h4 class="media-heading" style="color:white; font-size:30px; text-align: center;">Δυνατότητες</h4>
+                    <ul style=" color:black; color:white; font-size: 18px;" >
                         <br>
                         <li>Αυτοματοποιημένη υποβολή αναφορών.</li>
                         <br>
@@ -229,7 +244,16 @@
                         <li>Ενημέρωση πολιτών.</li>
                     </ul>
                     <p></p> 
+
                 </div>
+
+
+
+                <div class="col-md-1" style="">
+                    <ul style="list-style-type:none;" >
+                    </ul>
+                </div>
+
             </div>
         </div>
 

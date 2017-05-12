@@ -82,8 +82,39 @@ body, html{
 }
 
 
+
+/**********************************************/
+/*******************TOOLIP*********************/
+/*********************************************/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    color:white;
+}
+/*******************************************/
+
+
 /*****************************************/
-/**************BUTTON 1o LAYER*******************/
+/**************BUTTON 1o LAYER************/
 /*****************************************/
 .button {
     color: white;
@@ -554,7 +585,7 @@ a:hover{
 }
 
 #tf-home .overlay{
-    background: url(../img/background1_3.png);
+    background: url(../img/background1_4.png);
     height: auto;
     background-attachment: fixed;
 }
