@@ -245,17 +245,31 @@
             </div>
         </div>
 
+        <div id="concept1" style="background-color: white; text-align: center;" >
+            <div class="container"style="zoom:80%;">
+                <br></br>
+                <br></br>
+                <div class="col-md-1" style="">
+                </div>
+                <div class="col-md-10" style="">
+                    <ul style="list-style-type:none; align-content:center;" >
+                        <h4 style="font-size:50px;">Το CitySens σε καταλαβαίνει...</h4>
+                        <p style="color:black; font-size:25px;">Μέσω της NLP διαδικασίας το CitySens μπορεί να παράξει analytics για την τάση που επικρατεί στην εκάστοτε κοινότητα και αναλόγως να δείξει που πραγματικά βρίσκετε το σημαντικότερο πρόβλημα.<p>             
+                    </ul>
+                </div>
+                <div class="col-md-1" style="text-align: left;">
+                </div>
+            </div>
+        </div>
 
-        <div id="concept" style=" padding:2%; background-color: white; align-content: center;" >
-            <br></br>
-            <br></br>
+        <div id="concept" style="background-color: white; align-content: center;" >
             <div class="container"style="zoom:80%;">
 
                 <div class="col-md-1" style="">
                 </div>
                 <div class="col-md-10" style="">
 
-                    <img style="width:950px; height:300px;" src="img/back_logo2.png" alt=""/>
+                    <img style="width:950px; height:500px;" src="img/full.png" alt=""/>
                 </div>
                 <div class="col-md-1" style="text-align: left;">
                 </div>
@@ -265,13 +279,13 @@
         </div>
 
 
-        <div id="drop-bot" style="padding:5%; background-color: #b8b894;" >
+        <div id="drop-bot" style="padding:2%; background-color: #b8b894;" >
             <div class="container" style="" >
                 <div class="content" style="" >
                     <ul style="list-style-type:none; align-content:center;  " >
                         <button class="button button4" style=" align-content: center;" onclick="" data-toggle="collapse" data-target="#page1,#page2,#page3"><span>Δοκίμασέ το τώρα!</span></button>
                     </ul>
-                    
+
                     <div id="page2" class="collapse"  style="color:black; ">
                         <div class="container" style="" >
                             <ul style="list-style-type:none; align-content:center;  " >
