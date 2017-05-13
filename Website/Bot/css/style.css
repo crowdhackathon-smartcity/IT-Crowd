@@ -92,7 +92,6 @@ body, html{
     display:block;
     cursor: pointer;
     color: #3C96A7;  
-    transition: width 2s;
 }
 
 
@@ -173,7 +172,7 @@ body, html{
 /*****************************************/
 .button1 {
     border-radius: 4px;
-    background-color: #5c8a8a;
+    background-color: #222222;
     border: none;
     color: white;
     text-align: center;
@@ -623,7 +622,7 @@ a:hover{
     margin-bottom: 0;
     background: transparent;
     border: 0;
-    color: #222222 !important;
+    color: #333333 !important;
     padding: 2% 0;
     transition: all 0.5s;
     max-height:140px;
@@ -631,7 +630,7 @@ a:hover{
 #sticky {
     padding: 0.5ex;
     background-color: #333;
-    color: #222222;
+    color: #333333;
     font-size: 2em;
     border-radius: 0.5ex;
 }
@@ -640,11 +639,11 @@ a:hover{
     top: 0;
     width: 100%;
     z-index: 10000;
-    background: #222222;
+    background: #333333;
     padding: 1% 0;
 }
 #tf-menu.nav-default .navbar-nav > li > a {
-    color: #C5C5C5;
+    color: #ffffff;
     text-transform: uppercase;
     font-size:28px;
     font-weight: 600;

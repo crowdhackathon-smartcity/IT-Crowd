@@ -49,68 +49,58 @@
 
                             <a href="index.php"><img class=" hidden-xs navbar-brand" style="" src="img/chat_logo10.png" alt="" /></a>
                             <a href="index.php"><img class=" hidden-lg hidden-md  navbar-brand" style="zoom:60%;" src="img/chat_logo.png" alt="" /></a>
-
-
                         </div>
                         <div class="visible-xs" >
                             <button class="button2" style="vertical-align:middle; zoom:65%;" onclick="" data-toggle="collapse" data-target="#demo4,#demo5,#demo6,#demo7" style="vertical-align:middle"><span><img style="width: 30px; height: 30px; " src="img/tap.png" alt="" />     Πως Λειτουργεί </span></button>
                         </div>
-
-
-
-
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right" style="font-size:23px; font-weight:bold" >
-                                <li style="padding-top: 6px; "><a href="#bot-mobile">Bot</a></li>       
+                                <li style="padding-top: 6px; "><a href="#bot-mobile">Bot</a></li>   
+                                <li style="padding-top: 6px; "><a href="#concept">ιδέα</a></li>       
+                                <li style="padding-top: 6px; "><a href="#drop-bot">Δοκίμασέ το</a></li>       
                                 <li class="hidden-xs"><button class="button1"  onclick="" data-toggle="collapse" data-target="#demo,#demo2,#demo3,#demo4" style=" background-color:#3C96A7;vertical-align:middle"><span>Πως Λειτουργεί </span></button></li>                                                   
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
-
-
                 </nav>
 
 
                 <div id="tf-service">
-                    <br></br>
-                    <div class="hidden-xs container " style="">
+                    <div class="hidden-xs container" style="">
                         <div class="row">
-
                             <div class=" hidden-xs col-md-4" >
                                 <div id="demo" class="collapse" style=" color:black; ">
                                     <ul style="list-style-type:none; align-content:center;" >
-                                        <img style="padding-left: 45px;" src="img/category.png" alt="" />
-                                        <h3 style="padding-left:20px;">1. Επιλογή</h3> 
+                                        <img style="padding-left: 45px;" src="img/hello.png" alt="" />
+                                        <h3 style="padding-left:20px;">1. Χαιρετισμός</h3> 
                                         <hr>
                                         <ul>
-                                            <li style="font-size: 18px;">Διάλεξε κατηγορία προβλήματος.</li>
+                                            <li style="font-size: 18px;">Στείλε ένα "Γεια".</li>
                                         </ul>
                                     </ul>
                                 </div>    
                             </div>
-
                             <div class=" hidden-xs col-md-4" >
                                 <div id="demo2" class="collapse" style=" color:black; ">
                                     <ul class="" style="list-style-type:none; align-content:center;" >
-                                        <img style="padding-left: 45px;" src="img/doc1.png" alt="" />
-                                        <h3 style="padding-left: 20px;">2. Ανέβασε</h3>  
+                                        <img style="padding-left: 45px;" src="img/buttons.png" alt="" />
+                                        <h3 style="padding-left: 20px;">2.Διάλεξε Καρτέλα</h3>  
                                         <hr>
                                         <ul>
-                                            <li style="font-size: 18px;">Δώσε μια περιγραφή ή ανέβασε μια φωτογραφία.</li>
+                                            <li style="font-size: 18px;">Χρησιμοποίησε τις καρτέλες για να επιλέξεις το θέμα σου.</li>
                                         </ul>
                                     </ul>
                                 </div>
                             </div>
-
                             <div class=" hidden-xs col-md-4"   >
                                 <div id="demo3" class="collapse" style="color:black; ">
                                     <ul style="list-style-type:none; align-content:center;" >
-                                        <img style="padding-left: 45px;" style="padding-left:25px;" src="img/loc.png" alt="" />
-                                        <h3 style="padding-left:20px;">3. Τοποθεσία</h3>   
+                                        <img style="padding-left: 45px;" style="padding-left:25px;" src="img/doc1.png" alt="" />
+                                        <h3 style="padding-left:20px;">3.Γράψε για το θέμα σου.</h3>   
                                         <hr>
                                         <ul>
-                                            <li style="font-size: 18px;">Δήλωσε την τοποθεσία του συμβάντος.</li>
+                                            <li style="font-size: 18px;">Το bot θα σε καταλάβει το αίτημα σου.</li>
                                         </ul>
                                     </ul>
                                 </div>    
@@ -118,11 +108,11 @@
                             <div class=" hidden-xs col-md-4"   >
                                 <div id="demo4" class="collapse" style="color:black; ">
                                     <ul style="list-style-type:none; align-content:center;" >
-                                        <img style="padding-left: 45px;" style="padding-left:25px;" src="img/check.png" alt="" />
-                                        <h3 style="padding-left:20px;">4. Τόσο Απλό</h3>   
+                                        <img style="padding-left: 45px;" style="padding-left:25px;" src="img/icon.png" alt="" />
+                                        <h3 style="padding-left:20px;">4.Κέρδισε</h3>   
                                         <hr>
                                         <ul>
-                                            <li style="font-size: 18px;">Τόσο απλό και γρήγορο.</li>
+                                            <li style="font-size: 18px;">Έλεγχξε το email σου,εκεί θα βρεις την επιβεβαίωση του αιτήματός σου και το δώρο που κέρδισες  .</li>
                                         </ul>
                                     </ul>
                                 </div>    
@@ -201,12 +191,10 @@
             </div>
         </div>
 
-        <div id="bot-mobile" style=" padding:1%; background-color: black;" >
+        <div id="bot-mobile" style=" padding:5%; background-color: black;" >
             <br></br>
             <div class="container">
                 <div class="col-md-2" style="">
-
-
                     <div id="parent">
                         <p style="font-size:22px; color:#3C96A7; cursor: pointer;">Δυνατότητες Θεμάτων</p>
                         <div id="hover-content">
@@ -254,17 +242,13 @@
                     <ul style="list-style-type:none;" >
                     </ul>
                 </div>
-
             </div>
-            <br></br>
         </div>
 
 
-
-        <div id="bot-mobile1" style=" background-color: white; align-content: center;" >
+        <div id="concept" style=" padding:2%; background-color: white; align-content: center;" >
             <br></br>
             <br></br>
-
             <div class="container"style="zoom:80%;">
 
                 <div class="col-md-1" style="">
@@ -281,35 +265,30 @@
         </div>
 
 
-        <div id="drop-bot" style=" background-color: #b8b894;" >
-            <br></br>
-            <br></br>
+        <div id="drop-bot" style="padding:5%; background-color: #b8b894;" >
             <div class="container" style="" >
                 <div class="content" style="" >
                     <ul style="list-style-type:none; align-content:center;  " >
                         <button class="button button4" style=" align-content: center;" onclick="" data-toggle="collapse" data-target="#page1,#page2,#page3"><span>Δοκίμασέ το τώρα!</span></button>
                     </ul>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="drop-bot1" style=" background-color: #b8b894;">
-            <br></br>
-
-                <div id="page2" class="collapse"  style="color:black; ">
+                    
+                    <div id="page2" class="collapse"  style="color:black; ">
                         <div class="container" style="" >
-                            <div class="fb-page" 
-                                 data-href="https://www.facebook.com/bethesensor/" 
-                                 data-tabs="messages" 
-                                 data-width="400" 
-                                 data-height="300" 
-                                 data-small-header="true">
-                                <div class="fb-xfbml-parse-ignore">
-                                    <blockquote></blockquote>
+                            <ul style="list-style-type:none; align-content:center;  " >
+                                <div class="fb-page" 
+                                     data-href="https://www.facebook.com/bethesensor/" 
+                                     data-tabs="messages" 
+                                     data-width="400" 
+                                     data-height="300" 
+                                     data-small-header="true">
+                                    <div class="fb-xfbml-parse-ignore">
+                                        <blockquote></blockquote>
+                                    </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
 
@@ -333,11 +312,6 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
-
-
-
-
-
 
         <script>
             function myFunction() {
@@ -544,7 +518,7 @@
         <nav id="tf-footer">
             <div class="container">
                 <div align="center" >
-                    <p style=" font-size: 15px;">2017 © . All Rights Reserved. Designed and Coded with <img style="width: 15px; height: 15px; " src="img/h.png" alt="" /> by <a href="https://tableon.gr/" style=" text-decoration:none; color:red; font-size: 18px;"> ΙΤ Crowd Developement Team </a> </p>
+                    <p style=" font-size: 15px;">2017. Designed and Coded with <img style="width: 15px; height: 15px; " src="img/h.png" alt="" /> by <a href="#" style=" text-decoration:none; color:red; font-size: 18px;"> ΙΤ Crowd Developement Team </a> </p>
                 </div>
 
                 <div align="center"> 
@@ -560,7 +534,7 @@
         </div>
     </nav>
 
-    <button class="hidden-xs" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button class="hidden-xs" onclick="topFunction()" id="myBtn" title="Top">Go Top</button>
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () {
