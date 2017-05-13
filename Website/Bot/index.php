@@ -269,7 +269,7 @@
                 </div>
                 <div class="col-md-10" style="">
 
-                    <img style="width:950px; height:500px;" src="img/full.png" alt=""/>
+                    <img style="width:1000px; height:500px;" src="img/full.png" alt=""/>
                 </div>
                 <div class="col-md-1" style="text-align: left;">
                 </div>
