@@ -15,8 +15,10 @@
 	app.use(bodyParser.json())
 	
 	var db = new JsonDB("myDataBase", true, false);
+	initializeKeywords()
 	db.push("/arraytest/myarray[0]", {name:'test1'}, true)
 	db.push("/arraytest/myarray[1]", {problem:'test2'}, true)
+
 	// ROUTES
 	let transporter = nodemailer.createTransport({
 	    service: 'gmail',
@@ -59,9 +61,59 @@
 			else if(event.postback && event.postback.payload=="payload2"){
 				flow2(sender)
 			}
+			else if(event.postback && event.postback.payload=="payload3"){
+				db.push("/"+event.sender.id+"/myarray[1]", {who:'Πολίτης'}, true)
+				db.push("/"+event.sender.id+"/myarray[2]", {who:'Πολίτης'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/who")
+				sendText(sender, "Περιέγραψε το θέμα: ")
+				sleep(300)
+				processText(event.message.text,sender)
+			}
+			else if(event.postback && event.postback.payload=="payload4"){
+				db.push("/"+event.sender.id+"/myarray[1]", {who:'Επιχείρηση'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Αίτημα: "+data2)
+			}
+			else if(event.postback && event.postback.payload=="payload5"){
+				db.push("/"+event.sender.id+"/myarray[1]", {who:'Σύλλογος/Σωματείο'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Αίτημα: "+data2)
+			}
+			else if(event.postback && event.postback.payload=="payload6"){
+				db.push("/"+event.sender.id+"/myarray[1]", {who:'Κοινωνικός φορέας'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Αίτημα: "+data2)
+			}
+			else if(event.postback && event.postback.payload=="payload7"){
+				db.push("/"+event.sender.id+"/myarray[1]", {who:'Πολιτιστικός φορέας'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Αίτημα: "+data2)
+			}
+			else if(event.postback && event.postback.payload=="payload8"){
+				db.push("/"+event.sender.id+"/myarray[1]", {who:'Συνδικαλιστική Οργάνωση'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Αίτημα: "+data2)
+			}
+			else if(event.postback && event.postback.payload=="payload9"){
+				db.push("/"+event.sender.id+"/myarray[1]", {who:'Συλλογικότητα πολιτών'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Αίτημα: "+data2)
+			}
+			else if(event.postback && event.postback.payload=="payload10"){
+				db.push("/"+event.sender.id+"/myarray[1]", {who:'Άλλο'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Αίτημα: "+data2)
+			}
 			else if(event.postback && event.postback.payload=="payload11"){
 				db.push("/"+event.sender.id+"/myarray[1]", {problem:'POS'}, true)
-				//var data = db.getData("/"+event.sender.id+"/myarray[0]/obj")
 				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
 				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
 				sendText(sender, "Χρήστης: "+data+",\n Αίτημα: "+data2)
@@ -79,7 +131,6 @@
 				sendText(sender, "Χρήστης: "+data+",\n Πρόβλημα: "+data2)
 			}
 			else if (event.message && event.message.text) {
-				//db.push("/arraytest/myarray[1]", {problem:'test2'}, true)
 				db.push("/"+event.sender.id+"/myarray[0]", {name:event.sender.id}, true)
 				sendText(sender, "Καλησπέρα "+event.sender.id)
 				flow(sender)
@@ -149,7 +200,7 @@
 				    "type": "template",
 				      "payload": {
 				        "template_type": "button",
-				          "text": "Διάλεξε ιδιότητα:",
+				          "text": "Διάλεξε κατηγορία:",
 				            "buttons": [
 				              {
 				                "type": "postback",
@@ -160,37 +211,7 @@
 				                "type": "postback",
 				                "title": "Επιχείρηση",
 				                "payload": "payload4"
-				              },
-				              {"type": "postback",
-				          		"title": "Σύλλογος/Σωματείο",
-				          	 	"payload": "payload5"
-				          	  },
-				          	  {
-				          	  	"type": "postback",
-				          	  	"title": "Κοινωνικός φορέας",
-				          	  	"payload": "payload6"
-				          	  },
-				          	  {
-				          	  	"type": "postback",
-				          	  	"title": "Πολιτιστικός φορέας",
-				          	  	"payload": "payload7"
-				          	  },
-				          	  {
-				          	  	"type": "postback",
-				          	  	"title": "Συνδικαλιστική Οργάνωση",
-				          	  	"payload": "payload8"
-				          	  },
-				          	  {
-				          	  	"type": "postback",
-				          	  	"title": "Συλλογικότητα πολιτών",
-				          	  	"payload": "payload9"
-				          	  },
-				          	  {
-				          	  	"type": "postback",
-				          	  	"title": "Άλλο",
-				          	  	"payload": "payload10"
-				          	  }
-				          	
+				              }
 				            ]
 				      }
 				}
@@ -225,6 +246,24 @@
 				}
 	    	}
 		sendGenericMessage(sender,messageData)
+	}
+	function processText(text,sender){
+		//if(text.toLowerCase().indexOf('parking') > -1)
+		for(let i = 0; i < 3; i++){
+			var data=db.getData("/keywords/myarray["+i+"]/name")
+			var sendername=db.getData("/"+event.sender.id+"/myarray[0]/name")
+			if(text.toLowerCase().indexOf(data) > -1){
+				sendText(sender,data)
+				sleep(100)
+			}
+			sendText(sender,". Η υποβολή έγινε απο "+sendername)
+		}
+	}
+	function initializeKeywords(){
+		db.push("/keywords/myarray[0]", {name:'δεν'}, true)
+		db.push("/keywords/myarray[1]", {name:'υπαρχει'}, true)
+		db.push("/keywords/myarray[2]", {name:'λακουβα'}, true)
+
 	}
 	function sendGenericMessage(sender,messageData){
 		request({
