@@ -131,18 +131,48 @@
 				    "type": "template",
 				      "payload": {
 				        "template_type": "button",
-				          "text": "Διάλεξε κατηγορία:",
+				          "text": "Διάλεξε ιδιότητα:",
 				            "buttons": [
 				              {
 				                "type": "postback",
-				                "title": "Υποβολή θέματος",
+				                "title": "Πολίτης",
 				                "payload": "payload3"
 				              },
 				              {
 				                "type": "postback",
-				                "title": "Υποβολή ελέγχου",
+				                "title": "Επιχείρηση",
 				                "payload": "payload4"
-				              }
+				              },
+				              {"type": "postback",
+				          		"title": "Σύλλογος/Σωματείο",
+				          	 	"payload": "payload5"
+				          	  },
+				          	  {
+				          	  	"type": "postback",
+				          	  	"title": "Κοινωνικός φορέας",
+				          	  	"payload": "payload6"
+				          	  },
+				          	  {
+				          	  	"type": "postback",
+				          	  	"title": "Πολιτιστικός φορέας",
+				          	  	"payload": "payload7"
+				          	  },
+				          	  {
+				          	  	"type": "postback",
+				          	  	"title": "Συνδικαλιστική Οργάνωση",
+				          	  	"payload": "payload8"
+				          	  },
+				          	  {
+				          	  	"type": "postback",
+				          	  	"title": "Συλλογικότητα πολιτών",
+				          	  	"payload": "payload9"
+				          	  },
+				          	  {
+				          	  	"type": "postback",
+				          	  	"title": "Άλλο",
+				          	  	"payload": "payload10"
+				          	  }
+				          	
 				            ]
 				      }
 				}
