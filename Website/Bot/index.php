@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>CityBot</title>
+        <title>CitySens</title>
         <link rel="icon" href="img/chat_logo.png">
 
         <meta name="description" content="Your Description Here">
