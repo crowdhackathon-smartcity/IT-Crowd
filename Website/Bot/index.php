@@ -72,7 +72,7 @@
                 </nav>
 
 
-                <div id="tf-service "  >
+                <div id="tf-service">
                     <br></br>
                     <div class="hidden-xs container " style="">
                         <div class="row">
@@ -193,7 +193,7 @@
                     <div class="content" style="" >
                         <ul style="list-style-type:none; align-content:center;  " >
                             <li><img style="" src="img/mini_logo_best.png" alt="" /></li>
-                            <li> <button class="button button4" style="background-color:#3C96A7;"onclick="">Μίλησε στο bot! </button>    </li>
+                            <a href="https://m.me/bethesensor" class="button button4" style="background-color:#3C96A7;">Μίλησε στο bot!</a>
                         </ul>
                     </div>
                 </div>
@@ -201,23 +201,29 @@
             </div>
         </div>
 
-
-
-
         <div id="bot-mobile" style=" padding:1%; background-color: black;" >
             <br></br>
             <div class="container">
                 <div class="col-md-2" style="">
-                    <h4 class="media-heading" style="color:white; font-size:30px; text-align: center;">Δυνατότητες</h4>
-                    <ul style=" color:black; color:white; font-size: 18px;" >
-                        <br>
-                        <li>Υποβολή θεμάτων που αφορούν την κοινωνία.</li>
-                        <br>
-                        <li>Ενημέρωση της Τοπικής Αυτοδ. σε πραγματικό χρόνο.</li>
-                        <br>
-                        <li>Ενημέρωση πολιτών για διάφορα γεγονότα.</li>
-                    </ul>
+
+
+                    <div id="parent">
+                        <p style="font-size:22px; color:#3C96A7; cursor: pointer;">Δυνατότητες Θεμάτων</p>
+                        <div id="hover-content">
+                            <ul style="color:#3C96A7; font-size: 20px;" >
+                                <br>
+                                <li>Υποβολή θεμάτων που αφορούν την κοινωνία.</li>
+                                <br>
+                                <li>Ενημέρωση της Τοπικής Αυτοδ. σε πραγματικό χρόνο.</li>
+                                <br>
+                                <li>Ενημέρωση πολιτών για διάφορα γεγονότα.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
+
                 <div class="col-md-3" style="">
                     <ul style="list-style-type:none;" >
                         <img style="width:300px; height:600px;" src="img/mockup.gif" alt=""/>
@@ -229,20 +235,21 @@
                     </ul>
                 </div>
 
-                <div class="col-md-2" style="zoom:100%; text-align: left;">
-                    <h4 class="media-heading" style="color:white; font-size:30px; text-align: center;">Δυνατότητες</h4>
-                    <ul style=" color:black; color:white; font-size: 18px;" >
-                        <br>
-                        <li>Υποβολή ελέγχων από πολίτες προς το κράτος.</li>
-                        <br>
-                        <li>Επιβράβευση με πόντους εξαργύρωσης.</li>
-                    </ul>
+                <div class="col-md-2" style="zoom:100%; text-align: left;">                 
+                    <div id="parent">
+                        <p style="font-size:22px; color:#3C96A7; cursor: pointer;">Δυνατότητες Ελέγχου</p>
+                        <div id="hover-content">
+                            <ul style="color:#3C96A7; font-size: 20px;" >
+                                <br>
+                                <li>Υποβολή ελέγχων από πολίτες προς το κράτος.</li>
+                                <br>
+                                <li>Επιβράβευση με πόντους εξαργύρωσης.</li>
+                            </ul>
+                            </ul>
+                        </div>
+                    </div>
                     <p></p> 
-
                 </div>
-
-
-
                 <div class="col-md-1" style="">
                     <ul style="list-style-type:none;" >
                     </ul>
@@ -252,12 +259,15 @@
             <br></br>
         </div>
 
+
+
         <div id="bot-mobile1" style=" background-color: white; align-content: center;" >
             <br></br>
             <br></br>
+
             <div class="container"style="zoom:80%;">
 
-                <div class="col-md-1" style="text-align: left;">
+                <div class="col-md-1" style="">
                 </div>
                 <div class="col-md-10" style="">
 
@@ -269,6 +279,62 @@
             <br></br>
             <br></br>
         </div>
+
+
+        <div id="drop-bot" style=" background-color: #b8b894;" >
+            <br></br>
+            <br></br>
+            <div class="container" style="" >
+                <div class="content" style="" >
+                    <ul style="list-style-type:none; align-content:center;  " >
+                        <button class="button button4" style=" align-content: center;" onclick="" data-toggle="collapse" data-target="#page1,#page2,#page3"><span>Δοκίμασέ το τώρα!</span></button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="drop-bot1" style=" background-color: #b8b894;">
+            <br></br>
+
+                <div id="page2" class="collapse"  style="color:black; ">
+                        <div class="container" style="" >
+                            <div class="fb-page" 
+                                 data-href="https://www.facebook.com/bethesensor/" 
+                                 data-tabs="messages" 
+                                 data-width="400" 
+                                 data-height="300" 
+                                 data-small-header="true">
+                                <div class="fb-xfbml-parse-ignore">
+                                    <blockquote></blockquote>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '95100348886',
+                    xfbml: true,
+                    version: 'v2.6'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+
 
 
 
@@ -428,10 +494,10 @@
 
 
         <!--div id="tf-service" style="background-color:  #c2c2a3 " >
-
+    
             <div class="container" style="padding-left:150px;">
                 <br></br>
-
+    
                 <div class="col-md-3">
                     <div class="media">
                         <div class="media-body">
@@ -443,7 +509,7 @@
                     </div>
                     <p></p> 
                 </div>
-
+    
                 <div class="col-md-3">
                     <div class="media">
                         <div class="media-body">
@@ -457,7 +523,7 @@
                     </div>
                     <p></p> 
                 </div>
-
+    
                 <div class="col-md-3">
                     <div class="media">
                         <div class="media-body">
@@ -470,8 +536,8 @@
                     </div>
                     <p></p> 
                 </div>
-
-
+    
+    
             </div>
         </div-->
 

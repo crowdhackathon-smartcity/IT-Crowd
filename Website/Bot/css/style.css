@@ -81,6 +81,23 @@ body, html{
     background-color: #555;
 }
 
+#hover-content {
+    display:none;
+    cursor: pointer;
+    color:#d6d6c2;
+    font-size:23px;
+}
+
+#parent:hover #hover-content {
+    display:block;
+    cursor: pointer;
+    color: #3C96A7;  
+    transition: width 2s;
+}
+
+
+
+
 
 
 /**********************************************/
