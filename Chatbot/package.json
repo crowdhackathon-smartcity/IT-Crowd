@@ -11,6 +11,7 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "node-json-db": "^0.7.3",
     "nodemailer": "^4.0.1",
     "request": "^2.81.0"
   }

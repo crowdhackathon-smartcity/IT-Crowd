@@ -4,7 +4,8 @@
 	const bodyParser = require('body-parser')
 	const request = require('request')
 	const sleep = require('system-sleep')
-	const nodemailer = require('nodemailer');
+	const nodemailer = require('nodemailer')
+	const JsonDB = require('node-json-db')
 	const app = express()
 
 	app.set('port', (process.env.PORT || 5000))
@@ -12,7 +13,10 @@
 	// Allows us to process the data
 	app.use(bodyParser.urlencoded({extended: false}))
 	app.use(bodyParser.json())
-
+	
+	var db = new JsonDB("myDataBase", true, false);
+	db.push("/arraytest/myarray[0]", {name:'test1'}, true)
+	db.push("/arraytest/myarray[1]", {problem:'test2'}, true)
 	// ROUTES
 	let transporter = nodemailer.createTransport({
 	    service: 'gmail',
@@ -55,18 +59,32 @@
 			else if(event.postback && event.postback.payload=="payload2"){
 				flow2(sender)
 			}
-			else if(event.postback && event.postback.payload=="payload5"){
-				sendText(sender, "Απάντησε ΝΑΙ εάν η επιχείρηση διαθέτει POS και εξυπηρετήθηκες κανονικά ή ΟΧΙ στην αντίθετη περίπτωση")
-				issue="POS"
+			else if(event.postback && event.postback.payload=="payload11"){
+				db.push("/"+event.sender.id+"/myarray[1]", {problem:'POS'}, true)
+				//var data = db.getData("/"+event.sender.id+"/myarray[0]/obj")
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Αίτημα: "+data2)
 			}
-			else if(event.postback && issue=="POS" && event.message.text=="ΟΧΙ"){
-				sendText(sender, "Δώσε όνομα μαγαζιού")
+			else if(event.postback && event.postback.payload=="payload12"){
+				db.push("/"+event.sender.id+"/myarray[1]", {problem:'Parking'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Πρόβλημα: "+data2)
+			}
+			else if(event.postback && event.postback.payload=="payload13"){
+				db.push("/"+event.sender.id+"/myarray[1]", {problem:'Υπηρεσίας'}, true)
+				var data = db.getData("/"+event.sender.id+"/myarray[0]/name")
+				var data2 = db.getData("/"+event.sender.id+"/myarray[1]/problem")
+				sendText(sender, "Χρήστης: "+data+",\n Πρόβλημα: "+data2)
 			}
 			else if (event.message && event.message.text) {
-				
+				//db.push("/arraytest/myarray[1]", {problem:'test2'}, true)
+				db.push("/"+event.sender.id+"/myarray[0]", {name:event.sender.id}, true)
+				sendText(sender, "Καλησπέρα "+event.sender.id)
 				flow(sender)
 			}
-			else if (event.message && event.message.text) {
+			else if (event.message && event.messsage.text) {
 				let text = event.message.text
 				sendText(sender, "Μήνυμα Ελήφθη: "+text.substring(0, 200))
 				sleep(300)
@@ -190,17 +208,17 @@
 				              {
 				                "type": "postback",
 				                "title": "Έλεγχος POS",
-				                "payload": "payload5"
+				                "payload": "payload11"
 				              },
 				              {
 				                "type": "postback",
 				                "title": "Έλεγχος parking",
-				                "payload": "payload6"
+				                "payload": "payload12"
 				              },
 				              {
 				                "type": "postback",
 				                "title": "Έλεγχος υπηρεσίας",
-				                "payload": "payload7"
+				                "payload": "payload13"
 				              },
 				            ]
 				      }
