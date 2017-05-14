@@ -216,7 +216,7 @@
                         <div class="col-md-1" style="">
                         </div>
                         <div class="col-md-6" style=""> 
-                            <h4 style="font-size: 22px; text-align:left;" > ΕΠΑΝΑΣΧΕΔΙΑΣΜΟΣ ΔΙΑΔΙΚΑΣΙΑΣ ΜΕ ΣΚΟΠΟ ΤΗΝ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ</h4>
+                            <h4 style="font-size: 22px; text-align:left;" > ΕΠΑΝΑΣΧΕΔΙΑΣΜΟΣ ΔΙΑΔΙΚΑΣΙΑΣ ΜΕ ΣΚΟΠΟ ΤΟ CROWD SOURCING</h4>
                         </div>
                     </div>
                     <div class="col-md-3" style=""> 
@@ -329,12 +329,69 @@
         <div id="drop-bot" style="background-color: #b8b894;" >
             <div class="container" style="" >
                 <div class="content" style="" >
-                    <ul style="list-style-type:none; align-content:center;  " >
+                    <ul style="list-style-type:none; align-content:center;  " >                     
+                        <h4 style="font-size:35px;">Ψάξε το CitySens στο Messenger</h4>
+                        <br></br>
                         <a href="https://m.me/bethesensor" class="button button4" style="background-color:#3C96A7;">Μίλησε στο bot!</a>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <div id="info"  style="background-color: #d6d6c2; ">
+            <div class="container" style="padding:1%; padding-bottom:100px;" >
+                <div class="content" style="" >
+                    <div class="col-md-3" style="">  
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-4" style=""> 
+                            <img style="width:60px; height:40px;" src="img/check.png" alt="" />
+                        </div>
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-6" style=""> 
+                            <ul style="font-size: 22px; text-align: left;" >
+                                <li><h4 style="font-size: 22px; text-align: left;">Εξοικονόμηση Ανθρώπινου δυναμικού</h4></li>             
+                                <li><h4 style="font-size: 22px; text-align: left;">Στοχευμένες Δράσεις-Έργα</h4></li>
+                                <li><h4 style="font-size: 22px; text-align: left;">Κεντρικοποιημένο Μοντέλο - One For ALL</h4></li>
+                                <li><h4 style="font-size: 22px; text-align: left;">Cost Effective Model</h4></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="col-md-3" style=""> 
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-4" style=""> 
+                            <img style="width:60px; height:40px;" src="img/check.png" alt="" />
+                        </div>
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-6" style=""> 
+                            <ul style="font-size: 22px; text-align: left;" >
+                                <li><h4 style="font-size: 22px; text-align: left;">Από το πρόβλημα στην εξυπηρέτηση</h4></li>             
+                                <li><h4 style="font-size: 22px; text-align: left;">Νέα εποχή υπηρεσιών</h4></li>
+                                <li><h4 style="font-size: 22px; text-align: left;">Ενεργοί Χρήστες</h4></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style=""> 
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-4" style=""> 
+                            <img style="width:60px; height:40px;" src="img/check.png" alt="" />
+                        </div>
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-6" style=""> 
+                            <h4 style="font-size: 22px; text-align:left;"> Μελλοντικοί Στόχοι</h4>
+                        </div>
+                    </div>
+                    <br></br
+
+                </div>
+            </div>
+        </div>
+
 
         <script>
             window.fbAsyncInit = function () {
