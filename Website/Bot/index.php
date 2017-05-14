@@ -56,8 +56,9 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right" style="font-size:23px; font-weight:bold" >
+                                <li style="padding-top: 6px; "><a href="#info">Στόχοι</a></li>  
+                                <li style="padding-top: 6px; "><a href="#concept1">Ιδέα</a></li>  
                                 <li style="padding-top: 6px; "><a href="#bot-mobile">Bot</a></li>   
-                                <li style="padding-top: 6px; "><a href="#concept">ιδέα</a></li>       
                                 <li style="padding-top: 6px; "><a href="#drop-bot">Δοκίμασέ το</a></li>       
                                 <li class="hidden-xs"><button class="button1"  onclick="" data-toggle="collapse" data-target="#demo,#demo2,#demo3,#demo4" style=" background-color:#3C96A7;vertical-align:middle"><span>Πως Λειτουργεί </span></button></li>                                                   
                             </ul>
@@ -70,21 +71,21 @@
                     <div class="hidden-xs container" style="">
                         <div class="row">
                             <div class=" hidden-xs col-md-4" >
-                                <div id="demo" class="collapse" style=" color:black; ">
+                                <div id="demo" class="collapse" style=" color:black; text-align:center; ">
                                     <ul style="list-style-type:none; align-content:center;" >
-                                        <img style="padding-left: 45px;" src="img/hello.png" alt="" />
-                                        <h3 style="padding-left:20px;">1. Χαιρετισμός</h3> 
+                                        <img style="" src="img/hello.png" alt="" />
+                                        <h3 style="padding-left:2px;">1.Χαιρετισμός</h3> 
                                         <hr>
                                         <ul>
-                                            <li style="font-size: 18px;">Στείλε ένα "Γεια".</li>
+                                            <li style="font-size:18px;">Στείλε ένα "Γεια".</li>
                                         </ul>
                                     </ul>
                                 </div>    
                             </div>
                             <div class=" hidden-xs col-md-4" >
                                 <div id="demo2" class="collapse" style=" color:black; ">
-                                    <ul class="" style="list-style-type:none; align-content:center;" >
-                                        <img style="padding-left: 45px;" src="img/buttons.png" alt="" />
+                                    <ul class="" style="list-style-type:none; text-align:center; align-content:center;" >
+                                        <img style="padding-left:20px;" src="img/buttons.png" alt="" />
                                         <h3 style="padding-left: 20px;">2.Διάλεξε Καρτέλα</h3>  
                                         <hr>
                                         <ul>
@@ -94,9 +95,9 @@
                                 </div>
                             </div>
                             <div class=" hidden-xs col-md-4"   >
-                                <div id="demo3" class="collapse" style="color:black; ">
+                                <div id="demo3" class="collapse" style="color:black; text-align:center; ">
                                     <ul style="list-style-type:none; align-content:center;" >
-                                        <img style="padding-left: 45px;" style="padding-left:25px;" src="img/doc1.png" alt="" />
+                                        <img style="" style="padding-left:20px;" src="img/doc1.png" alt="" />
                                         <h3 style="padding-left:20px;">3.Γράψε για το θέμα σου.</h3>   
                                         <hr>
                                         <ul>
@@ -106,10 +107,10 @@
                                 </div>    
                             </div>
                             <div class=" hidden-xs col-md-4"   >
-                                <div id="demo4" class="collapse" style="color:black; ">
+                                <div id="demo4" class="collapse" style="color:black; textt-align:center; ">
                                     <ul style="list-style-type:none; align-content:center;" >
                                         <img style="padding-left: 45px;" style="padding-left:25px;" src="img/icon.png" alt="" />
-                                        <h3 style="padding-left:20px;">4.Κέρδισε</h3>   
+                                        <h3 style="text-align: center; padding-left:30px;">4.Κέρδισε</h3>   
                                         <hr>
                                         <ul>
                                             <li style="font-size: 18px;">Έλεγχξε το email σου,εκεί θα βρεις την επιβεβαίωση του αιτήματός σου και το δώρο που κέρδισες  .</li>
@@ -191,8 +192,86 @@
             </div>
         </div>
 
-        <div id="bot-mobile" style=" padding:5%; background-color: black;" >
-            <br></br>
+        <div id="info"  style="background-color: #b8b894; ">
+            <div class="container" >
+                <div class="content" style="" >
+                    <div class="col-md-3" style="">  
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-4" style=""> 
+                            <img style="width:60px; height:40px;" src="img/check.png" alt="" />
+                        </div>
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-6" style=""> 
+                            <h4 style="font-size: 22px; text-align: left;"> Ο ΔΗΜΟΣ ΩΣ ΣΥΣΤΗΜΑ</h4>
+                        </div>
+                    </div> 
+                    <div class="col-md-3" style=""> 
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-4" style=""> 
+                            <img style="width:60px; height:40px;" src="img/check.png" alt="" />
+                        </div>
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-6" style=""> 
+                            <h4 style="font-size: 22px; text-align:left;" > ΕΠΑΝΑΣΧΕΔΙΑΣΜΟΣ ΔΙΑΔΙΚΑΣΙΑΣ ΜΕ ΣΚΟΠΟ ΤΗΝ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style=""> 
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-4" style=""> 
+                            <img style="width:60px; height:40px;" src="img/check.png" alt="" />
+                        </div>
+                        <div class="col-md-1" style="">
+                        </div>
+                        <div class="col-md-6" style=""> 
+                            <h4 style="font-size: 22px; text-align:left;"> ΑΙ ΣΤΗΝ ΥΠΗΡΕΣΙΑ ΤΗΣ ΤΟΠΙΚΗΣ ΑΥΤΟΔΙΟΙΚΗΣΗΣ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="concept1" style="background-color: white; text-align: center;" >
+            <div class="container"style="zoom:80%;">
+                <br></br>
+                <br></br>
+                <div class="col-md-1" style="">
+                </div>
+                <div class="col-md-10" style="">
+                    <ul style="list-style-type:none; align-content:center;" >
+                        <h4 style="font-size:50px;">Το CitySens σε καταλαβαίνει...</h4>
+                        <p style="color:black; font-size:25px;">Μέσω της NLP διαδικασίας το CitySens μπορεί να παράξει analytics για την τάση που επικρατεί στην εκάστοτε κοινότητα και αναλόγως να δείξει που πραγματικά βρίσκετε το σημαντικότερο πρόβλημα.<p>             
+                    </ul>
+                </div>
+                <div class="col-md-1" style="text-align: left;">
+                </div>
+            </div>
+
+
+            <div id="concept" style="background-color: white; align-content: center;" >
+                <div class="container"style="zoom:80%;">
+
+                    <div class="col-md-1" style="">
+                    </div>
+                    <div class="col-md-10" style="">
+
+                        <img style="width:1000px; height:500px;" src="img/full.png" alt=""/>
+                    </div>
+                    <div class="col-md-1" style="text-align: left;">
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+            </div>
+        </div>
+
+
+        <div id="bot-mobile" style=" padding:2%; background-color: black;" >
             <div class="container">
                 <div class="col-md-2" style="">
                     <div id="parent">
@@ -208,8 +287,6 @@
                             </ul>
                         </div>
                     </div>
-
-
                 </div>
 
                 <div class="col-md-3" style="">
@@ -242,66 +319,19 @@
                     <ul style="list-style-type:none;" >
                     </ul>
                 </div>
+
             </div>
         </div>
 
-        <div id="concept1" style="background-color: white; text-align: center;" >
-            <div class="container"style="zoom:80%;">
-                <br></br>
-                <br></br>
-                <div class="col-md-1" style="">
-                </div>
-                <div class="col-md-10" style="">
-                    <ul style="list-style-type:none; align-content:center;" >
-                        <h4 style="font-size:50px;">Το CitySens σε καταλαβαίνει...</h4>
-                        <p style="color:black; font-size:25px;">Μέσω της NLP διαδικασίας το CitySens μπορεί να παράξει analytics για την τάση που επικρατεί στην εκάστοτε κοινότητα και αναλόγως να δείξει που πραγματικά βρίσκετε το σημαντικότερο πρόβλημα.<p>             
-                    </ul>
-                </div>
-                <div class="col-md-1" style="text-align: left;">
-                </div>
-            </div>
-        </div>
-
-        <div id="concept" style="background-color: white; align-content: center;" >
-            <div class="container"style="zoom:80%;">
-
-                <div class="col-md-1" style="">
-                </div>
-                <div class="col-md-10" style="">
-
-                    <img style="width:1000px; height:500px;" src="img/full.png" alt=""/>
-                </div>
-                <div class="col-md-1" style="text-align: left;">
-                </div>
-            </div>
-            <br></br>
-            <br></br>
-        </div>
 
 
-        <div id="drop-bot" style="padding:2%; background-color: #b8b894;" >
+
+        <div id="drop-bot" style="background-color: #b8b894;" >
             <div class="container" style="" >
                 <div class="content" style="" >
                     <ul style="list-style-type:none; align-content:center;  " >
-                        <button class="button button4" style=" align-content: center;" onclick="" data-toggle="collapse" data-target="#page1,#page2,#page3"><span>Δοκίμασέ το τώρα!</span></button>
+                        <a href="https://m.me/bethesensor" class="button button4" style="background-color:#3C96A7;">Μίλησε στο bot!</a>
                     </ul>
-
-                    <div id="page2" class="collapse"  style="color:black; ">
-                        <div class="container" style="" >
-                            <ul style="list-style-type:none; align-content:center;  " >
-                                <div class="fb-page" 
-                                     data-href="https://www.facebook.com/bethesensor/" 
-                                     data-tabs="messages" 
-                                     data-width="400" 
-                                     data-height="300" 
-                                     data-small-header="true">
-                                    <div class="fb-xfbml-parse-ignore">
-                                        <blockquote></blockquote>
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
