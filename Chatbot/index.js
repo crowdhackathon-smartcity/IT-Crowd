@@ -82,16 +82,7 @@
 			let sender = event.sender.id
 			console.dir(event)
 			if(event.message && event.message.text){
-				
 				db.push("/"+event.sender.id+"/myarray[0]", {name:event.sender.id})
-				//db.push("/"+event.sender.id+"/myarray[3]", {pendingtext:'false'})
-				var query=reports.find({}).exec(function(err, result) {
-			      if (!err) {
-			        sendText(sender, JSON.stringify(result))
-			      } else {
-			        // error handling
-			      };
-			    });
 				try{
 					let a=db.getData("/"+event.sender.id+"/myarray[3]/pendingtext")
 				}catch(error){
@@ -299,7 +290,7 @@
 		//if(text.toLowerCase().indexOf('parking') > -1)
 		let finaltext="text: "
 		var sendername=db.getData("/"+sender+"/myarray[0]/name")
-		for(let i = 0; i < 14; i++){
+		for(let i = 0; i < 27; i++){
 			var data=db.getData("/keywords/myarray["+i+"]/name")
 			if(text.toLowerCase().indexOf(data) > -1){
 				finaltext=finaltext.concat(data)
@@ -318,32 +309,34 @@
 		report.save(function (err) {if (err) console.log ('Error on save!')});
 	}
 	function initializeKeywords(){
-		db.push("/keywords/myarray[]", {name:'δεν'}, true)
-		db.push("/keywords/myarray[]", {name:'πρεπει'}, true)
-		db.push("/keywords/myarray[]", {name:'υπαρχ'}, true)
-		db.push("/keywords/myarray[]", {name:'λακουβ'}, true)
-		db.push("/keywords/myarray[]", {name:'φαναρι'}, true)
-		db.push("/keywords/myarray[]", {name:'παγκακι'}, true)
-		db.push("/keywords/myarray[]", {name:'αμαξι'}, true)
-		db.push("/keywords/myarray[]", {name:'οχημα'}, true)
-		db.push("/keywords/myarray[]", {name:'βλαβ'}, true)
-		db.push("/keywords/myarray[]", {name:'παρατηρησ'}, true)
-		db.push("/keywords/myarray[]", {name:'αλλαγ'}, true)
-		db.push("/keywords/myarray[]", {name:'κυρωσ'}, true)
-		db.push("/keywords/myarray[]", {name:'τροποποιησ'}, true)
-		db.push("/keywords/myarray[]", {name:'αργοπορι'}, true)
-		db.push("/keywords/myarray[]", {name:'καθυστερησ'}, true)
-		db.push("/keywords/myarray[]", {name:'υπηρεσι'}, true)
-		db.push("/keywords/myarray[]", {name:'αρθρ'}, true)
-		db.push("/keywords/myarray[]", {name:'ταμει'}, true)
-		db.push("/keywords/myarray[]", {name:'εφορι'}, true)
-		db.push("/keywords/myarray[]", {name:'δημο'}, true)
-		db.push("/keywords/myarray[]", {name:'προβλημα' }, true)
-		db.push("/keywords/myarray[]", {name:'μεριμνα'}, true)
-		db.push("/keywords/myarray[]", {name:'νοσοκομει'}, true)
-		db.push("/keywords/myarray[]", {name:'απαραδεκτ'}, true)
-		db.push("/keywords/myarray[]", {name:'ΙΚΑ'}, true)
-		db.push("/keywords/myarray[]", {name:'αναμονη'}, true)
+		db.push("/keywords/myarray[0]", {name:'δεν'}, true)
+		db.push("/keywords/myarray[1]", {name:'πρεπει'}, true)
+		db.push("/keywords/myarray[2]", {name:'υπαρχ'}, true)
+		db.push("/keywords/myarray[3]", {name:'λακουβ'}, true)
+		db.push("/keywords/myarray[4]", {name:'φαναρι'}, true)
+		db.push("/keywords/myarray[5]", {name:'παγκακι'}, true)
+		db.push("/keywords/myarray[6]", {name:'αμαξι'}, true)
+		db.push("/keywords/myarray[7]", {name:'οχημα'}, true)
+		db.push("/keywords/myarray[8]", {name:'βλαβ'}, true)
+		db.push("/keywords/myarray[9]", {name:'παρατηρησ'}, true)
+		db.push("/keywords/myarray[10]", {name:'αλλαγ'}, true)
+		db.push("/keywords/myarray[11]", {name:'κυρωσ'}, true)
+		db.push("/keywords/myarray[12]", {name:'τροποποιησ'}, true)
+		db.push("/keywords/myarray[13]", {name:'αργοπορι'}, true)
+		db.push("/keywords/myarray[14]", {name:'καθυστερησ'}, true)
+		db.push("/keywords/myarray[15]", {name:'υπηρεσι'}, true)
+		db.push("/keywords/myarray[16]", {name:'αρθρ'}, true)
+		db.push("/keywords/myarray[17]", {name:'ταμει'}, true)
+		db.push("/keywords/myarray[18]", {name:'εφορι'}, true)
+		db.push("/keywords/myarray[19]", {name:'δημο'}, true)
+		db.push("/keywords/myarray[20]", {name:'προβλημα' }, true)
+		db.push("/keywords/myarray[21]", {name:'μεριμνα'}, true)
+		db.push("/keywords/myarray[22]", {name:'νοσοκομει'}, true)
+		db.push("/keywords/myarray[23]", {name:'απαραδεκτ'}, true)
+		db.push("/keywords/myarray[24]", {name:'ΙΚΑ'}, true)
+		db.push("/keywords/myarray[25]", {name:'αναμονη'}, true)
+		db.push("/keywords/myarray[26]", {name:'ουρ'}, true)
+		db.push("/keywords/myarray[27]", {name:'τεραστι'}, true)
 	}
 	function sendGenericMessage(sender,messageData){
 		request({
